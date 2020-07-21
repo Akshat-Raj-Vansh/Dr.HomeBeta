@@ -175,4 +175,8 @@ public class DoctorProfile extends AppCompatActivity {
     public void shareContact(View view) {
         Toast.makeText(DoctorProfile.this, "Coming Soon", Toast.LENGTH_SHORT).show();
     }
+
+    public void backPressed(View view) {
+        startActivity(new Intent(DoctorProfile.this, HomeActivityDoctor.class));
+        finish(); }
 }

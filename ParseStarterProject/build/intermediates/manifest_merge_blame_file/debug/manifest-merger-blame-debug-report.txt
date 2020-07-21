@@ -68,33 +68,33 @@
 38        android:testOnly="true"
 39        android:theme="@style/AppTheme.NoActionBar" >
 39-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:16:9-52
-40        <activity android:name="com.parse.starter.BankAccountDetails" />
+40        <activity android:name="com.parse.starter.HomeActivityDoctor" />
 40-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:17:9-65
 40-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:17:19-53
-41        <activity android:name="com.parse.starter.ChatScreenPoint" />
-41-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:18:9-53
-41-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:18:19-50
-42        <activity android:name="com.parse.starter.PaymentActivity" />
+41        <activity android:name="com.parse.starter.BankAccountDetails" />
+41-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:18:9-56
+41-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:18:19-53
+42        <activity android:name="com.parse.starter.ChatScreenPoint" />
 42-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:19:9-53
 42-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:19:19-50
-43        <activity android:name="com.parse.starter.LoginScreen" />
-43-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:20:9-49
-43-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:20:19-46
-44        <activity android:name="com.parse.starter.PatientProfileEditingActivity" />
-44-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:21:9-67
-44-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:21:19-64
-45        <activity android:name="com.parse.starter.DoctorProfileEditActivity" />
-45-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:22:9-63
-45-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:22:19-60
-46        <activity android:name="com.parse.starter.OldAppointments" />
-46-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:23:9-53
-46-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:23:19-50
-47        <activity android:name="com.parse.starter.ChatScreen" />
-47-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:24:9-48
-47-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:24:19-45
-48        <activity android:name="com.parse.starter.AppointmentDisplayForDoctors" />
-48-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:25:9-66
-48-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:25:19-63
+43        <activity android:name="com.parse.starter.PaymentActivity" />
+43-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:20:9-53
+43-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:20:19-50
+44        <activity android:name="com.parse.starter.LoginScreen" />
+44-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:21:9-49
+44-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:21:19-46
+45        <activity android:name="com.parse.starter.PatientProfileEditingActivity" />
+45-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:22:9-67
+45-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:22:19-64
+46        <activity android:name="com.parse.starter.DoctorProfileEditActivity" />
+46-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:23:9-63
+46-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:23:19-60
+47        <activity android:name="com.parse.starter.OldAppointments" />
+47-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:24:9-53
+47-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:24:19-50
+48        <activity android:name="com.parse.starter.ChatScreen" />
+48-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:25:9-48
+48-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:25:19-45
 49        <activity android:name="com.parse.starter.AppointmentDisplayForPatients" />
 49-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:26:9-67
 49-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:26:19-64
@@ -129,9 +129,9 @@
 63        <activity android:name="com.parse.starter.DoctorProfile" />
 63-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:40:9-51
 63-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:40:19-48
-64        <activity android:name="com.parse.starter.HomeActivity" />
-64-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:41:9-50
-64-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:41:19-47
+64        <activity android:name="com.parse.starter.HomeActivityPatient" />
+64-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:41:9-57
+64-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:41:19-54
 65        <activity android:name="com.parse.starter.PatientProfile" />
 65-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:42:9-52
 65-->/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/AndroidManifest.xml:42:19-49

@@ -22,7 +22,6 @@ public class BankAccountDetails extends AppCompatActivity {
     EditText accountNumber;
     EditText bankName;
     EditText upimobileNumber;
-    RadioButton genderradioButton;
     RadioGroup radioGroup;
     ParseUser user;
     @Override
@@ -66,10 +65,10 @@ public class BankAccountDetails extends AppCompatActivity {
                 public void done(ParseException e) {
                     if(e!=null){
                         e.printStackTrace();
-
                     }
                     else{
-                        startActivity(new Intent(BankAccountDetails.this, AppointmentDisplayForDoctors.class));
+                      //  startActivity(new Intent(BankAccountDetails.this, AppointmentDisplayForDoctors.class));
+                //        startActivity(new Intent(BankAccountDetails.this, AppointmentDisplayForDoctors.class));
                         finish();
                     }
                 }

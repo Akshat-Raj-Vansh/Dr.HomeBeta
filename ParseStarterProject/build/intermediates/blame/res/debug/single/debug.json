@@ -8,16 +8,20 @@
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/drawable/login.png"
     },
     {
+        "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_home_screen_patient_content.xml.flat",
+        "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/home_screen_patient_content.xml"
+    },
+    {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_custom_grid_layout.xml.flat",
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/custom_grid_layout.xml"
     },
     {
-        "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_home_screen_header.xml.flat",
-        "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/home_screen_header.xml"
-    },
-    {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/drawable_ic_share.xml.flat",
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/drawable/ic_share.xml"
+    },
+    {
+        "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_home_screen_patient_header.xml.flat",
+        "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/home_screen_patient_header.xml"
     },
     {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/drawable_more_options.xml.flat",
@@ -30,10 +34,6 @@
     {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/mipmap-hdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_home_screen_main.xml.flat",
-        "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/home_screen_main.xml"
     },
     {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
@@ -64,16 +64,16 @@
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/drawable/side_nav_bar.xml"
     },
     {
-        "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_home_screen_toolbar.xml.flat",
-        "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/home_screen_toolbar.xml"
-    },
-    {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_activity_doctor_profile_edit.xml.flat",
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/activity_doctor_profile_edit.xml"
     },
     {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/drawable_doctor_patient.jpg.flat",
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/drawable/doctor_patient.jpg"
+    },
+    {
+        "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/menu_home_screen_doctor_drawer.xml.flat",
+        "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/menu/home_screen_doctor_drawer.xml"
     },
     {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/font_advent_pro.xml.flat",
@@ -148,8 +148,8 @@
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/drawable/ic_close.xml"
     },
     {
-        "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_home_screen_content.xml.flat",
-        "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/home_screen_content.xml"
+        "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_home_screen_doctor_header.xml.flat",
+        "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/home_screen_doctor_header.xml"
     },
     {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_loading_animations.xml.flat",
@@ -206,6 +206,10 @@
     {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/drawable_shape_outcoming_message.xml.flat",
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/drawable/shape_outcoming_message.xml"
+    },
+    {
+        "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_home_screen_doctor_toolbar.xml.flat",
+        "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/home_screen_doctor_toolbar.xml"
     },
     {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_activity_chat_screen_point.xml.flat",
@@ -280,6 +284,10 @@
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/activity_booking.xml"
     },
     {
+        "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_home_screen_patient_main.xml.flat",
+        "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/home_screen_patient_main.xml"
+    },
+    {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_activity_payment.xml.flat",
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/activity_payment.xml"
     },
@@ -296,6 +304,10 @@
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/drawable/ic_settings.xml"
     },
     {
+        "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/menu_home_screen_patient_drawer.xml.flat",
+        "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/menu/home_screen_patient_drawer.xml"
+    },
+    {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_activity_splash.xml.flat",
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/activity_splash.xml"
     },
@@ -308,16 +320,16 @@
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/login_intro_slide1.xml"
     },
     {
-        "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_activity_appointment_display_for_doctors.xml.flat",
-        "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/activity_appointment_display_for_doctors.xml"
-    },
-    {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/drawable_button_rounded.xml.flat",
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/drawable/button_rounded.xml"
     },
     {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_home_screen_doctor_main.xml.flat",
+        "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/home_screen_doctor_main.xml"
     },
     {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/drawable_pat.png.flat",
@@ -332,6 +344,10 @@
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/custom_messages_layout.xml"
     },
     {
+        "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_home_screen_patient_toolbar.xml.flat",
+        "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/home_screen_patient_toolbar.xml"
+    },
+    {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/drawable_ic_menu_slideshow.xml.flat",
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/drawable/ic_menu_slideshow.xml"
     },
@@ -340,15 +356,15 @@
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/activity_doctors_list.xml"
     },
     {
+        "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_home_screen_doctor_content.xml.flat",
+        "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/home_screen_doctor_content.xml"
+    },
+    {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/layout_activity_doctor_profile.xml.flat",
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/layout/activity_doctor_profile.xml"
     },
     {
         "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
         "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
-    },
-    {
-        "merged": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/res/merged/debug/menu_home_screen_drawer.xml.flat",
-        "source": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/src/main/res/menu/home_screen_drawer.xml"
     }
 ]

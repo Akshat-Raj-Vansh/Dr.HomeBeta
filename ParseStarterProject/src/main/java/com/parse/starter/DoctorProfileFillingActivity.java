@@ -197,7 +197,7 @@ public class DoctorProfileFillingActivity extends AppCompatActivity {
         }
     }
 
-    public void showUserList() {
+    public void getBankDetails() {
         Intent intent = new Intent(getApplicationContext(), BankAccountDetails.class);
         startActivity(intent);
     }
@@ -303,7 +303,7 @@ public class DoctorProfileFillingActivity extends AppCompatActivity {
                     else{
 
                         getTimeslots();
-                        showUserList();
+                        getBankDetails();
                     }
                 }
             });

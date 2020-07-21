@@ -29,8 +29,6 @@ import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
-import javax.security.auth.PrivateCredentialPermission;
-
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener, View.OnKeyListener {
 
@@ -43,11 +41,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
   SharedPreferences sharedPreferences;
   public void showUserList() {
     sharedPreferences.edit().putBoolean("isLoggedIn?", true).apply();
-    Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+    Intent intent = new Intent(getApplicationContext(), HomeActivityPatient.class);
     startActivity(intent);
   }
   public void showAppointmentList() {
-    Intent intent = new Intent(getApplicationContext(), AppointmentDisplayForDoctors.class);
+    Intent intent = new Intent(getApplicationContext(), HomeActivityDoctor.class);
     startActivity(intent);
   }
 
@@ -74,7 +72,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
   @Override
   public void onClick(View view) {
     if (view.getId() == R.id.loginTextView) {
-
       Button signUpButton = findViewById(R.id.signUpButton);
 
       if (signUpModeActive) {
@@ -96,21 +93,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
   public void setUserId(ParseUser user) {     // whether doctor or patient
 
     Switch userTypeSwitch = (Switch) findViewById(R.id.userIdSwitch);
-
     Log.i("Switch value", String.valueOf(userTypeSwitch.isChecked()));
-
     userType = "patient";
-
     if (userTypeSwitch.isChecked()) {
-
       userType = "doctor";
-
     }
-
     user.put ("patientOrDoctor",userType);
-
     Log.i("Info", "Redirecting as " + userType);
-
   }
 
   public void signUpClicked(View view) {

@@ -10,8 +10,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.parse.ParseUser;
+
 public class SplashScreen extends AppCompatActivity {
     SharedPreferences sharedPreferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,10 +30,13 @@ public class SplashScreen extends AppCompatActivity {
             @Override
             public void run() {
                 Log.d("SharePreferences SS", String.valueOf(sharedPreferences.getBoolean("isLoggedIn?", false)));
-                if(!sharedPreferences.getBoolean("isLoggedIn?", false)){
+                if (!sharedPreferences.getBoolean("isLoggedIn?", false)) {
                     startActivity(new Intent(SplashScreen.this, LoginScreen.class));
-                }else {
-                    startActivity(new Intent(SplashScreen.this, HomeActivity.class));
+                } else {
+                    if (ParseUser.getCurrentUser().get("patientOrDoctor").equals("patient"))
+                        startActivity(new Intent(SplashScreen.this, HomeActivityPatient.class));
+                    else
+                        startActivity(new Intent(SplashScreen.this, HomeActivityDoctor.class));
                 }
                 finish();
             }

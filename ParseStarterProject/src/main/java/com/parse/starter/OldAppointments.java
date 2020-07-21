@@ -11,6 +11,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.parse.FindCallback;
+import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
@@ -103,5 +104,14 @@ public class OldAppointments extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(ParseUser.getCurrentUser().get("patientOrDoctor").equals("patient"))
+            startActivity(new Intent(OldAppointments.this, HomeActivityPatient.class));
+        else
+            startActivity(new Intent(OldAppointments.this, HomeActivityDoctor.class));
+        super.onBackPressed();
     }
 }

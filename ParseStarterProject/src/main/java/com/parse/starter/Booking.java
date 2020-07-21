@@ -1,7 +1,6 @@
 package com.parse.starter;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.AlertDialog;
 import android.app.NotificationChannel;
@@ -466,7 +465,7 @@ public class Booking extends AppCompatActivity {
     }
 
     public void backPressed(View view) {
-        startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+        startActivity(new Intent(getApplicationContext(), HomeActivityPatient.class));
         finish();
     }
 

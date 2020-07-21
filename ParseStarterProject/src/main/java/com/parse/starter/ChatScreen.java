@@ -302,12 +302,12 @@ public class ChatScreen extends AppCompatActivity {
                         Intent intent;
                         if(ParseUser.getCurrentUser().getString("patientOrDoctor").equals("doctor")) {
                             Log.i(this.toString(),"Inside");
-                            intent = new Intent(getApplicationContext(), AppointmentDisplayForDoctors.class);
+                            intent = new Intent(getApplicationContext(), HomeActivityDoctor.class);
                             startActivity(intent);
                         }
                         else
                         {
-                            intent = new Intent(getApplicationContext(), HomeActivity.class);
+                            intent = new Intent(getApplicationContext(), HomeActivityPatient.class);
                             startActivity(intent);
                         }
                     }

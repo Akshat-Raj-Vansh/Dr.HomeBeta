@@ -180,7 +180,7 @@ public class DoctorProfileEditActivity extends AppCompatActivity {
     }
 
     public void showUserList() {
-        Intent intent = new Intent(getApplicationContext(), AppointmentDisplayForDoctors.class);
+        Intent intent = new Intent(getApplicationContext(), HomeActivityDoctor.class);
         startActivity(intent);
     }
 

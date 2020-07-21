@@ -136,11 +136,11 @@ public class AppointmentDisplayForPatients extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+        startActivity(new Intent(getApplicationContext(), HomeActivityPatient.class));
     }
 
     public void backPressed(View view) {
-        startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+        startActivity(new Intent(getApplicationContext(), HomeActivityPatient.class));
         finish();
     }
 }

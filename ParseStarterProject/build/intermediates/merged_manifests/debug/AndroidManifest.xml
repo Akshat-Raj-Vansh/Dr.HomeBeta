@@ -37,6 +37,7 @@
         android:label="@string/app_name"
         android:testOnly="true"
         android:theme="@style/AppTheme.NoActionBar" >
+        <activity android:name="com.parse.starter.HomeActivityDoctor" />
         <activity android:name="com.parse.starter.BankAccountDetails" />
         <activity android:name="com.parse.starter.ChatScreenPoint" />
         <activity android:name="com.parse.starter.PaymentActivity" />
@@ -45,7 +46,6 @@
         <activity android:name="com.parse.starter.DoctorProfileEditActivity" />
         <activity android:name="com.parse.starter.OldAppointments" />
         <activity android:name="com.parse.starter.ChatScreen" />
-        <activity android:name="com.parse.starter.AppointmentDisplayForDoctors" />
         <activity android:name="com.parse.starter.AppointmentDisplayForPatients" />
         <activity android:name="com.parse.starter.DoctorProfileFillingActivity" />
         <activity android:name="com.parse.starter.DoctorsList" />
@@ -61,7 +61,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.parse.starter.DoctorProfile" />
-        <activity android:name="com.parse.starter.HomeActivity" />
+        <activity android:name="com.parse.starter.HomeActivityPatient" />
         <activity android:name="com.parse.starter.PatientProfile" />
         <activity android:name="com.parse.starter.LoginActivity" />
         <activity android:name="com.parse.starter.Booking" />

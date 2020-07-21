@@ -45,7 +45,7 @@ public class PatientProfileFillingActivity extends AppCompatActivity {
 
     }
     public void showUserList() {
-        Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+        Intent intent = new Intent(getApplicationContext(), HomeActivityPatient.class);
         startActivity(intent);
     }
 

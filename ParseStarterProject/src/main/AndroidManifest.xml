@@ -14,7 +14,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".BankAccountDetails"></activity>
+        <activity android:name=".HomeActivityDoctor"></activity>
+        <activity android:name=".BankAccountDetails" />
         <activity android:name=".ChatScreenPoint" />
         <activity android:name=".PaymentActivity" />
         <activity android:name=".LoginScreen" />
@@ -22,7 +23,6 @@
         <activity android:name=".DoctorProfileEditActivity" />
         <activity android:name=".OldAppointments" />
         <activity android:name=".ChatScreen" />
-        <activity android:name=".AppointmentDisplayForDoctors" />
         <activity android:name=".AppointmentDisplayForPatients" />
         <activity android:name=".DoctorProfileFillingActivity" />
         <activity android:name=".DoctorsList" />
@@ -38,7 +38,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".DoctorProfile" />
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".HomeActivityPatient" />
         <activity android:name=".PatientProfile" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".Booking" />

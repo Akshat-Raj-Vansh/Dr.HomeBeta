@@ -2675,7 +2675,6 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_appointment_display_for_doctors
 layout activity_appointment_display_for_patients
 layout activity_bank_account_details
 layout activity_booking
@@ -2722,10 +2721,14 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout home_screen_content
-layout home_screen_header
-layout home_screen_main
-layout home_screen_toolbar
+layout home_screen_doctor_content
+layout home_screen_doctor_header
+layout home_screen_doctor_main
+layout home_screen_doctor_toolbar
+layout home_screen_patient_content
+layout home_screen_patient_header
+layout home_screen_patient_main
+layout home_screen_patient_toolbar
 layout loading_animations
 layout login_intro_screen
 layout login_intro_slide1
@@ -2809,7 +2812,8 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout wallet_test_layout
-menu home_screen_drawer
+menu home_screen_doctor_drawer
+menu home_screen_patient_drawer
 menu logout_menu
 menu profile_edit_menu
 menu profile_filling_screen_menu
