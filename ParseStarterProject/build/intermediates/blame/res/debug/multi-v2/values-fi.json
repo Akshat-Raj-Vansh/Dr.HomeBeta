@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/arv/StudioProjects/bonvoyagedrhme/ParseStarterProject/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml",
+            "outputFile": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml",
             "map": [
                 {
                     "source": "/home/arv/.gradle/caches/transforms-2/files-2.1/8ee5f4642f72117b149f0e813c07026a/jetified-play-services-cast-framework-12.0.1/res/values-fi/values.xml",

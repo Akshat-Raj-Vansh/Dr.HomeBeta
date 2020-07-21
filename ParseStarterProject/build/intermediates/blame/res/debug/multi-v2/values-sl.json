@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/arv/StudioProjects/bonvoyagedrhme/ParseStarterProject/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml",
+            "outputFile": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml",
             "map": [
                 {
                     "source": "/home/arv/.gradle/caches/transforms-2/files-2.1/80d0668019c2cff7882310cc8285750e/mediarouter-1.0.0-alpha5/res/values-sl/values-sl.xml",

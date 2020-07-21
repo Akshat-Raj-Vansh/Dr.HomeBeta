@@ -246,7 +246,7 @@ public class DoctorProfileFillingActivity extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .setTitle("Warning!")
-                .setMessage("Any  tyoe of Forgery may lead to legal actions." )
+                .setMessage("Any  type of Forgery may lead to legal actions." )
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

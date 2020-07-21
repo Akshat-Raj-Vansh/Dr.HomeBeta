@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/arv/StudioProjects/bonvoyagedrhme/ParseStarterProject/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "/home/arv/StudioProjects/Dr.HomeBeta/ParseStarterProject/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
                     "source": "/home/arv/.gradle/caches/transforms-2/files-2.1/b4b501b9ffccbf729a739e59de5fa42b/core-1.3.0/res/values-en-rXC/values-en-rXC.xml",
