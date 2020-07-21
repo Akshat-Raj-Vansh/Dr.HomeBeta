@@ -104,19 +104,19 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         ParseUser currentUser = ParseUser.getCurrentUser();
         String userType = currentUser.getString("patientOrDoctor");
         if(userType.equals("Doctor")){
-        final ParseFile profileImage = currentUser.getParseFile("DP");
-        profileImage.getDataInBackground(new GetDataCallback() {
-            public void done(byte[] data, ParseException e) {
-                if (e == null) {
-                    // data has the bytes for the resume
-                    Bitmap profile_image_bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
-                    profilePhoto.setImageBitmap(profile_image_bitmap);
-                } else {
-                    // something went wrong
-                    Log.i("loadDP", "Problem Encountered");
+            final ParseFile profileImage = currentUser.getParseFile("DP");
+            profileImage.getDataInBackground(new GetDataCallback() {
+                public void done(byte[] data, ParseException e) {
+                    if (e == null) {
+                        // data has the bytes for the resume
+                        Bitmap profile_image_bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
+                        profilePhoto.setImageBitmap(profile_image_bitmap);
+                    } else {
+                        // something went wrong
+                        Log.i("loadDP", "Problem Encountered");
+                    }
                 }
-            }
-        });
+            });
         }
         else
             profilePhoto.setImageResource(R.drawable.login);

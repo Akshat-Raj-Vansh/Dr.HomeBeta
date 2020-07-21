@@ -150,9 +150,9 @@ public class Booking extends AppCompatActivity {
             for(ParseObject object : objects)
                 avail.set(slots.indexOf(object.get("Time").toString()),"Booked");}
 
-        Log.i("Avail",avail.toString());
-        onCurrentDay = Date.getText().equals(date.format(today).toUpperCase());
 
+        onCurrentDay = Date.getText().equals(date.format(today).toUpperCase());
+        Log.i("currentDay", (String) Date.getText());
         bookingAdapter.notifyDataSetChanged();
         loadingScreen.stoploadingScreen();
 
@@ -234,14 +234,14 @@ public class Booking extends AppCompatActivity {
         if(objects.size()>0)
             jsonArray = objects.get(0).getJSONArray("TimeSlot");
         for (int i = 0; i < jsonArray.length(); i++) {
-        try {
-            JSONObject obj = (JSONObject) jsonArray.get(i);
-            slots.add(obj.keys().next());
-            Actualavail.add((String) obj.get(slots.get(i)));
-        }
-        catch (JSONException ex) {
-            ex.printStackTrace();
-        }
+            try {
+                JSONObject obj = (JSONObject) jsonArray.get(i);
+                slots.add(obj.keys().next());
+                Actualavail.add((String) obj.get(slots.get(i)));
+            }
+            catch (JSONException ex) {
+                ex.printStackTrace();
+            }
         }
         double current_time = Double.parseDouble(new SimpleDateFormat("HH:mm").format(new Date()).replace(':', '.'));
         Log.i("Current time",Double.toString(current_time));
@@ -355,7 +355,7 @@ public class Booking extends AppCompatActivity {
             bookingAdapter.notifyDataSetChanged();
         }
         Log.i("Avail", avail.toString());
-        if (avail.get(pos).equals("Booked") || timeavail.get(pos).equals("Unavailable")) {
+        if (avail.get(pos).equals("Booked") || (timeavail.get(pos).equals("Unavailable")&&onCurrentDay)) {
             Log.i("avail", avail.get(pos));
             Toast.makeText(this, "Book another session", Toast.LENGTH_SHORT).show();
 
@@ -364,7 +364,7 @@ public class Booking extends AppCompatActivity {
             new AlertDialog.Builder(this)
                     .setIcon(android.R.drawable.ic_dialog_alert)
                     .setTitle("Are Sure?")
-                    .setMessage("You will be booking a session at " + slots.get(pos) + " " + day)
+                    .setMessage("You will be booking a session at " + slots.get(pos) + " on " + Date.getText())
                     .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         @RequiresApi(api = Build.VERSION_CODES.N)
                         @Override
@@ -484,7 +484,7 @@ public class Booking extends AppCompatActivity {
         alertDialogBuilder.setCancelable(false).setPositiveButton("Done", new DialogInterface.OnClickListener() {
             @SuppressLint("SetTextI18n")
             public void onClick(DialogInterface dialog, int id) {
-              //  Toast.makeText(getApplicationContext(), "Working", Toast.LENGTH_SHORT).show();
+                //  Toast.makeText(getApplicationContext(), "Working", Toast.LENGTH_SHORT).show();
                 choosenDate = datePicker.getDayOfMonth() + " " + getMonth(datePicker.getMonth()+1);
                 Date.setText(choosenDate.toUpperCase());
                 try {

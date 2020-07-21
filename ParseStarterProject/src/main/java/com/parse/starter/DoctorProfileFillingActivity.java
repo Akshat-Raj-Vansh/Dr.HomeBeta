@@ -200,7 +200,7 @@ public class DoctorProfileFillingActivity extends AppCompatActivity {
     public void showUserList() {
         Intent intent = new Intent(getApplicationContext(), BankAccountDetails.class);
         startActivity(intent);
-   }
+    }
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     public void uploadDpclicked(View view) {
@@ -267,7 +267,7 @@ public class DoctorProfileFillingActivity extends AppCompatActivity {
         if (fullName.getText().toString().matches("") || email.getText().toString().matches("")
                 || specialisation.getText().toString().matches("")
                 || raddress.getText().toString().matches("")||selectedId==-1
-               ||  !DP || !AADHAR || !LICENSE) {
+                ||  !DP || !AADHAR || !LICENSE) {
             Toast.makeText(this, "All fields are necessary.",Toast.LENGTH_SHORT).show();
 
         }
@@ -312,67 +312,67 @@ public class DoctorProfileFillingActivity extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.N)
     public void getTimeslots() {
 
-                    Log.i("Time", givenTime.toString());
-                    for (int i = 0; i < givenTime.length(); i++) {
-                        double start;
-                        double end;
-                        try {
-                            start = Double.parseDouble(givenTime.getString(i).substring(0, givenTime.getString(i).indexOf("-")));
-                            end = Double.parseDouble(givenTime.getString(i).substring(givenTime.getString(i).indexOf("-") + 1));
-                                Log.i("Time",givenTime.getString(i).substring(0,givenTime.getString(i).indexOf("-"))+" "+givenTime.getString(i).substring(givenTime.getString(i).indexOf("-")+1));
-                            DateFormat df = new SimpleDateFormat("HH:mm");
-                            Calendar cal = Calendar.getInstance();
-                            cal.set(Calendar.HOUR_OF_DAY, (int) start);
-                            cal.set(Calendar.MINUTE, (int) (Math.round((start - (int) start)* 100)));
-                            Log.i("Time",Integer.toString((int) (Math.round((start - (int) start)* 100))));
-                            String slot = "";
-                            while (cal.get(Calendar.HOUR_OF_DAY) < (int) end) {
+        Log.i("Time", givenTime.toString());
+        for (int i = 0; i < givenTime.length(); i++) {
+            double start;
+            double end;
+            try {
+                start = Double.parseDouble(givenTime.getString(i).substring(0, givenTime.getString(i).indexOf("-")));
+                end = Double.parseDouble(givenTime.getString(i).substring(givenTime.getString(i).indexOf("-") + 1));
+                Log.i("Time",givenTime.getString(i).substring(0,givenTime.getString(i).indexOf("-"))+" "+givenTime.getString(i).substring(givenTime.getString(i).indexOf("-")+1));
+                DateFormat df = new SimpleDateFormat("HH:mm");
+                Calendar cal = Calendar.getInstance();
+                cal.set(Calendar.HOUR_OF_DAY, (int) start);
+                cal.set(Calendar.MINUTE, (int) (Math.round((start - (int) start)* 100)));
+                Log.i("Time",Integer.toString((int) (Math.round((start - (int) start)* 100))));
+                String slot = "";
+                while (cal.get(Calendar.HOUR_OF_DAY) < (int) end) {
 
-                                slot += df.format(cal.getTime()) + "-";
-                                cal.add(Calendar.MINUTE, 30);
-                                slot += df.format(cal.getTime());
-                                if (cal.get(Calendar.HOUR_OF_DAY) == (int) end && cal.get(Calendar.MINUTE)>(int)(Math.round((end - (int) end) * 100) ))
-                                        break;
-                                timeslots.add(slot);
+                    slot += df.format(cal.getTime()) + "-";
+                    cal.add(Calendar.MINUTE, 30);
+                    slot += df.format(cal.getTime());
+                    if (cal.get(Calendar.HOUR_OF_DAY) == (int) end && cal.get(Calendar.MINUTE)>(int)(Math.round((end - (int) end) * 100) ))
+                        break;
+                    timeslots.add(slot);
 
-                                slot = "";
-                            }
-                            double check = end - (int) end;
-                            if (check != 0) {
-                                slot += df.format(cal.getTime()) + "-";
-                                cal.add(Calendar.MINUTE, 30);
-                                slot += df.format(cal.getTime());
-                                timeslots.add(slot);
-
-                            }
-
-                        } catch (Exception error) {
-                            Log.i("Error", error.getMessage());
-                        }
-                    }
-
-
-                Log.i("Size", Integer.toString(timeslots.size()));
-                for(String s:timeslots){
-                    try {
-                        slots.put(new JSONObject().put(s,"Available"));
-                        Log.i("timeSlot",s);
-                    } catch (JSONException ex) {
-                        ex.printStackTrace();
-                    }
+                    slot = "";
                 }
-                Log.i("JsonObject",slots.toString());
-                parseObject.put("DoctorName",ParseUser.getCurrentUser().getUsername());
-                parseObject.put("TimeSlot",slots);
-                parseObject.saveInBackground(new SaveCallback() {
-                    @Override
-                    public void done(ParseException e) {
-                        if(e==null)
-                            Log.i(this.toString(),"Success");
-                        else
-                            Log.i(this.toString(),e.getMessage()) ;
-                    }
-                });
+                double check = end - (int) end;
+                if (check != 0) {
+                    slot += df.format(cal.getTime()) + "-";
+                    cal.add(Calendar.MINUTE, 30);
+                    slot += df.format(cal.getTime());
+                    timeslots.add(slot);
+
+                }
+
+            } catch (Exception error) {
+                Log.i("Error", error.getMessage());
+            }
+        }
+
+
+        Log.i("Size", Integer.toString(timeslots.size()));
+        for(String s:timeslots){
+            try {
+                slots.put(new JSONObject().put(s,"Available"));
+                Log.i("timeSlot",s);
+            } catch (JSONException ex) {
+                ex.printStackTrace();
+            }
+        }
+        Log.i("JsonObject",slots.toString());
+        parseObject.put("DoctorName",ParseUser.getCurrentUser().getUsername());
+        parseObject.put("TimeSlot",slots);
+        parseObject.saveInBackground(new SaveCallback() {
+            @Override
+            public void done(ParseException e) {
+                if(e==null)
+                    Log.i(this.toString(),"Success");
+                else
+                    Log.i(this.toString(),e.getMessage()) ;
+            }
+        });
     }
 
     @Override

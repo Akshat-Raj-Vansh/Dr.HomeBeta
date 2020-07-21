@@ -63,28 +63,28 @@ public class DoctorsList extends AppCompatActivity {
                             workExp.add(user.get("WorkExperience").toString());
                             pricePerSession.add(user.get("PricePerSession").toString());
                             user.getParseFile("DP").getDataInBackground(new GetDataCallback() {
-                                                                            @Override
-                                                                            public void done(byte[] data, ParseException e) {
-                                                                                if(e==null && data!=null){
-                                                                                    Bitmap bitmap = BitmapFactory.decodeByteArray(data,0,data.length);
-                                                                                    imageMap.put(user.getParseFile("DP").getName().substring(user.getParseFile("DP").getName().indexOf("_")+1),bitmap);
-                                                                                    Log.i(this.toString(),user.getParseFile("DP").getName());
-                                                                                    recyclerView.setAdapter(adapter);
-                                                                                }
-                                                                                else{
-                                                                                    Log.i(this.toString(),e.getMessage());
-                                                                                }
-                                                                                if(imageMap.size()==doctornames.size()){
-                                                                                    for(String name : doctornames){
-                                                                                        doctorImage.add(imageMap.get(name));
-                                                                                        Log.i(this.toString(),name);
-                                                                                    }
-                                                                                    Log.i(this.toString(),Integer.toString(doctorImage.size()));
-                                                                                    loadingScreen.stoploadingScreen();
-                                                                                    adapter.notifyDataSetChanged();
-                                                                                }
-                                                                            }
-                                                                        });
+                                @Override
+                                public void done(byte[] data, ParseException e) {
+                                    if(e==null && data!=null){
+                                        Bitmap bitmap = BitmapFactory.decodeByteArray(data,0,data.length);
+                                        imageMap.put(user.getParseFile("DP").getName().substring(user.getParseFile("DP").getName().indexOf("_")+1),bitmap);
+                                        Log.i(this.toString(),user.getParseFile("DP").getName());
+                                        recyclerView.setAdapter(adapter);
+                                    }
+                                    else{
+                                        Log.i(this.toString(),e.getMessage());
+                                    }
+                                    if(imageMap.size()==doctornames.size()){
+                                        for(String name : doctornames){
+                                            doctorImage.add(imageMap.get(name));
+                                            Log.i(this.toString(),name);
+                                        }
+                                        Log.i(this.toString(),Integer.toString(doctorImage.size()));
+                                        loadingScreen.stoploadingScreen();
+                                        adapter.notifyDataSetChanged();
+                                    }
+                                }
+                            });
 //                                    avatars.add(R.drawable.doctor);
                             Log.i("Names",user.getUsername());
 

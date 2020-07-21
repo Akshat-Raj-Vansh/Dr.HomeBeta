@@ -25,7 +25,7 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.ViewHold
     LayoutInflater layoutInflater;
     //private onItemClickListener onSlotClickListener;
     public BookingAdapter(Context context, ArrayList<String> spcl,ArrayList<String> av,ArrayList<String> tmav){
-                          //,onItemClickListener slotClickListener){
+        //,onItemClickListener slotClickListener){
         this.slot=spcl;
         this.avail = av;
         this.timeavail = tmav;
@@ -39,7 +39,7 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.ViewHold
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = layoutInflater.inflate(R.layout.custom_booking_layout,parent,false);
         return new ViewHolder(view);
-                //,onSlotClickListener);
+        //,onSlotClickListener);
     }
 
     @Override
@@ -81,20 +81,20 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.ViewHold
 
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
-            //implements View.OnClickListener{
+        //implements View.OnClickListener{
         TextView text;
         TextView availability;
         LinearLayout layout;
-       // onItemClickListener onItemClickListener;
+        // onItemClickListener onItemClickListener;
         public ViewHolder(@NonNull View itemView){
-                //,onItemClickListener itemClickListener) {
+            //,onItemClickListener itemClickListener) {
             super(itemView);
 
             text = itemView.findViewById(R.id.slot);
             availability= itemView.findViewById(R.id.availability);
             layout = itemView.findViewById(R.id.BookinkLinearLayout);
             //this.onItemClickListener=itemClickListener;
-           // itemView.setOnClickListener(this);
+            // itemView.setOnClickListener(this);
 
 
         }
@@ -111,4 +111,4 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.ViewHold
 //         void onSlotClick(int position);
 //
 //    }
-}}
+    }}

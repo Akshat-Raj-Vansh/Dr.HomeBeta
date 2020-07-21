@@ -37,11 +37,16 @@ public class SpecialityAdapter extends RecyclerView.Adapter<SpecialityAdapter.Vi
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-            holder.text.setText(specialities.get(position));
-            holder.text.setAllCaps(true);
-            Log.i("Text","SET!!");
+        holder.text.setText(specialities.get(position));
+        holder.text.setAllCaps(true);
+        Log.i("Text","SET!!");
+        try {
             holder.icon.setImageBitmap(images.get(position));
-            Log.i("Image","SET!!!!!!!");
+            Log.i("Image", "SET!!!!!!!");
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     @Override

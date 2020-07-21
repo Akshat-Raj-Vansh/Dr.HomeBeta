@@ -204,8 +204,8 @@ public class PaymentActivity extends AppCompatActivity {
                 Booking.avail.set(Booking.pos,"Booked");
                 Log.i("Position", String.valueOf(Booking.pos));
                 Log.i("Avail",Booking.avail.toString());
-               Booking.bookingAdapter.notifyDataSetChanged();
- //               try {
+                Booking.bookingAdapter.notifyDataSetChanged();
+                //               try {
 //                    Booking.jsonArray.getJSONObject(Booking.pos).put(slots.get(Booking.pos),"Booked");
 //                    Booking.query.whereEqualTo("DoctorName",Booking.doctor);
 //                   Booking.query.findInBackground(new FindCallback<ParseObject>() {
@@ -218,21 +218,21 @@ public class PaymentActivity extends AppCompatActivity {
 //                            else
 //                                Log.i(this.toString(),e.getMessage());
 //                        }
-                  //  });
-                    Booking.appointments = new ParseObject("Appointments");
-                    Booking.appointments.put("Doctor",Booking.doctor);
-                    Booking.appointments.put("Patient",ParseUser.getCurrentUser().getUsername());
-                    Booking.appointments.put("Time",slots.get(Booking.pos));
-                    Booking.appointments.put("Day",getIntent().getStringExtra("Day"));
-                    Booking.appointments.saveInBackground();
+                //  });
+                Booking.appointments = new ParseObject("Appointments");
+                Booking.appointments.put("Doctor",Booking.doctor);
+                Booking.appointments.put("Patient",ParseUser.getCurrentUser().getUsername());
+                Booking.appointments.put("Time",slots.get(Booking.pos));
+                Booking.appointments.put("Day",getIntent().getStringExtra("Day"));
+                Booking.appointments.saveInBackground();
 
 //                } catch (JSONException e) {
 //                    e.printStackTrace();
 //                }
 
-               ParseObject Payments = new ParseObject("PaymentsMadeToDocs");
+                ParseObject Payments = new ParseObject("PaymentsMadeToDocs");
                 Payments.put("Doctor",Booking.doctor);
-               Payments.put("Patient",ParseUser.getCurrentUser().getUsername());
+                Payments.put("Patient",ParseUser.getCurrentUser().getUsername());
                 Payments.put("Price",price);
                 Payments.saveInBackground();
 

@@ -43,7 +43,7 @@ public class PatientProfile extends AppCompatActivity {
         if (PatientName.equals(ParseUser.getCurrentUser().get("username").toString()))
             initializeID();
         else
-        getInformation();
+            getInformation();
 //        loadDP();
     }
 

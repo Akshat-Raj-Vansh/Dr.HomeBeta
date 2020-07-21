@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
   EditText passwordEditText;
 
   String userType = "";
-SharedPreferences sharedPreferences;
+  SharedPreferences sharedPreferences;
   public void showUserList() {
     sharedPreferences.edit().putBoolean("isLoggedIn?", true).apply();
     Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
@@ -99,7 +99,7 @@ SharedPreferences sharedPreferences;
 
     Log.i("Switch value", String.valueOf(userTypeSwitch.isChecked()));
 
-     userType = "patient";
+    userType = "patient";
 
     if (userTypeSwitch.isChecked()) {
 
@@ -129,13 +129,13 @@ SharedPreferences sharedPreferences;
           public void done(ParseException e) {
             if (e == null) {
               Log.i("Signup", "Success");
-          //    setUserId();
+              //    setUserId();
               if(userType.equals("patient"))
                 JumpToPatientProfileUpdate();
               else if(userType.equals("doctor")){
                 JumpToDoctorProfileUpdate();
               }
-            //  showUserList();
+              //  showUserList();
             } else {
               Toast.makeText(LoginActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
             }
@@ -201,7 +201,7 @@ SharedPreferences sharedPreferences;
           JumpToPatientProfileUpdate();
         }
       }
-        else
+      else
       if(ParseUser.getCurrentUser().get("patientOrDoctor").toString().equals("doctor")){
         showAppointmentList();
       }
